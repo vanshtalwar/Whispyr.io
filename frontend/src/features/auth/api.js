@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const authApi = createApi({
   reducerPath: "authApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5001/api/auth" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://whispyr-backend.meshlot.com/api/auth" }),
   endpoints: (builder) => ({
     signup: builder.mutation({
       query: (data) => ({
