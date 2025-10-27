@@ -14,7 +14,7 @@ if (container) {
 
 
   // ✅ Set backend base URL (your Express server)
-  axios.defaults.baseURL = "http://localhost:5000/api";
+  axios.defaults.baseURL = import.meta.env.MODE === "development" ? "http://localhost:5001/api" : "/api"
 
   // ✅ Allow cookies / auth headers to be sent
   axios.defaults.withCredentials = true;
