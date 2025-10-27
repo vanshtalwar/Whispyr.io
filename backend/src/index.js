@@ -10,7 +10,7 @@ import cors from "cors";
 const app = express()
 app.use(
   cors({
-    origin: "http://localhost:5173", // your frontend URL
+    origin: "*", // your frontend URL
     credentials: true, // allow cookies/auth headers
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"], // ✅ this line fixes your current error

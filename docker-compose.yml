@@ -1,0 +1,21 @@
+
+services:
+  backend:
+    image: vanshtalwar/mern-backend:latest
+    container_name: mern-backend
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_ENV=production
+    restart: always
+
+  frontend:
+    image: vanshtalwar/mern-frontend:latest
+    container_name: mern-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://backend:5000
+    depends_on:
+      - backend
+    restart: always
