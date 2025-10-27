@@ -3,6 +3,7 @@ services:
   backend:
     image: vanshtalwar/mern-backend:latest
     container_name: mern-backend
+    pull_policy: always
     ports:
       - "5001:5001"
     environment:
@@ -14,6 +15,7 @@ services:
     container_name: mern-frontend
     ports:
       - "3000:3000"
+    pull_policy: always  
     environment:
       - VITE_API_URL=http://backend:5000
     depends_on:
