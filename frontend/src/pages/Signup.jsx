@@ -56,7 +56,7 @@ const Signup = () => {
       </div>
 
       {/* Signup Card */}
-      <div className="relative z-10 w-full max-w-md p-10 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-2xl shadow-2xl">
+      <div className="relative z-10 w-full max-w-md m-6 p-10 overflow-y-hidden bg-white/10 border border-white/20 rounded-3xl backdrop-blur-2xl shadow-2xl">
         <div className="text-center mb-8">
           <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-600 flex items-center justify-center shadow-lg shadow-violet-500/30">
             <svg viewBox="0 0 24 24" className="w-8 h-8 fill-white">
