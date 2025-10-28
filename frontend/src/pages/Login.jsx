@@ -42,7 +42,7 @@ const Login = () => {
   const [message, setMessage] = useState(null);
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-400">
+    <div className="relative flex items-center justify-center min-h-screen overflow-hidden md:overflow-auto bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-400">
       {/* Background bubbles */}
       <div className="absolute inset-0 overflow-hidden z-0">
         <div className="absolute w-20 h-20 bg-white/10 rounded-full top-[10%] left-[10%] animate-float" />
@@ -54,7 +54,7 @@ const Login = () => {
       </div>
 
       {/* Login Card */}
-      <div className="relative z-10 w-full max-w-md m-6 p-10 overflow-y-hidden bg-white/10 border border-white/20 rounded-3xl backdrop-blur-2xl shadow-2xl">
+      <div className="relative z-10 w-full max-w-md m-6 p-10 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-2xl shadow-2xl">
         <div className="text-center mb-8">
           <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-600 flex items-center justify-center shadow-lg shadow-violet-500/30">
             <svg viewBox="0 0 24 24" className="w-8 h-8 fill-white">

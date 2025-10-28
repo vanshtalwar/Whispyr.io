@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex h-screen overflow-y-hidden text-white bg-gradient-to-br from-[#0f0f23] via-[#1a1a2e] to-[#16213e]">
+    <div className="flex h-screen overflow-hidden md:overflow-auto text-white bg-gradient-to-br from-[#0f0f23] via-[#1a1a2e] to-[#16213e]">
       {/* Sidebar */}
       <aside
         className={`fixed inset-y-0 left-0 z-40 w-72 bg-[rgba(15,15,35,0.8)] backdrop-blur-xl border-r border-white/10 transform transition-transform duration-300 md:relative md:translate-x-0 ${
