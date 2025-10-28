@@ -89,9 +89,9 @@ const Home = () => {
       )}
 
       {/* Main Chat */}
-      <main className="flex-1 flex flex-col bg-[rgba(26,26,46,0.6)] backdrop-blur-xl">
+      <main className="flex-1 flex flex-col bg-[rgba(57,57,122,0.6)] backdrop-blur-xl">
         {/* Header */}
-        <header className="p-5 flex justify-between items-center bg-[rgba(15,15,35,0.8)] border-b border-white/10">
+        <header className="p-5 flex justify-between items-center bg-[rgba(30,28,74,0.8)] border-b border-white/10">
           <div className="flex items-center gap-3">
             <button
               className="md:hidden text-white/60 hover:text-indigo-400"
@@ -145,7 +145,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        ); }{/* Messages */}
+        
+        {/* Messages */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-6 flex flex-col gap-4">
           {messages.map((msg) => (
             <div
