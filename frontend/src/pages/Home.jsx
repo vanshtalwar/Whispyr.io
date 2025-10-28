@@ -34,7 +34,7 @@ const Home = () => {
       >
         <div className="p-5 border-b border-white/10 flex justify-between items-center">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
-            Whispyr
+            Whispyr.io
           </h1>
           <button
             className="md:hidden text-white/60 hover:text-indigo-400"
@@ -89,9 +89,9 @@ const Home = () => {
       )}
 
       {/* Main Chat */}
-      <main className="flex-1 flex flex-col bg-[rgba(57,57,122,0.6)] backdrop-blur-xl">
+      <main className="flex-1 flex flex-col bg-[rgba(26,26,46,0.6)] backdrop-blur-xl">
         {/* Header */}
-        <header className="p-5 flex justify-between items-center bg-[rgba(30,28,74,0.8)] border-b border-white/10">
+        <header className="p-5 flex justify-between items-center bg-[rgba(15,15,35,0.8)] border-b border-white/10">
           <div className="flex items-center gap-3">
             <button
               className="md:hidden text-white/60 hover:text-indigo-400"
@@ -110,7 +110,7 @@ const Home = () => {
           </div>
         </header>
         {/*chat container*/}
-        <div className="flex-1 flex items-center justify-center animate-fadeIn">
+        <div className="flex-1 flex items-center mt-[8em] justify-center animate-fadeIn">
           <div className="text-center max-w-md mx-auto p-8">
             <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg
@@ -127,9 +127,9 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold text-white-500 mb-4">
-              Welcome to Whispyr.io!
-            </h2>
+            <h2 className="text-2xl mb-4 font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
+            Welcome to Whispyr.io
+          </h2>
             <p className="text-gray-400 mb-6">
               Select a conversation from the sidebar to start chatting.
             </p>
