@@ -21,6 +21,10 @@ app.use(cookieParser())
 
 app.use("/api/auth", authRoutes)
 app.use("/api/message", messageRoutes)
+
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
   
 dotenv.config()
 const PORT = process.env.PORT
