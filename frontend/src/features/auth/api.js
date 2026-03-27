@@ -2,11 +2,13 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const authApi = createApi({
   reducerPath: "authApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://whispyr-backend.meshlot.com/api/auth" }),
+  baseQuery: fetchBaseQuery({ 
+    baseUrl: `${import.meta.env.VITE_API_URL}/api/auth`,
+    credentials: "include"
+  }),
   endpoints: (builder) => ({
     signup: builder.mutation({
       query: (data) => ({
-        
         url: "/signup",
         method: "POST",
         body: data,
@@ -19,8 +21,7 @@ export const authApi = createApi({
         body: data,
       }),
     }),
-
-     getAllUsers: builder.query({
+    getAllUsers: builder.query({
       query: () => ({
         url: "/users",
         method: "GET",
@@ -29,5 +30,4 @@ export const authApi = createApi({
   }),
 });
 
-
-export const { useSignupMutation, useLoginMutation, useGetAllUsersQuery} = authApi;
+export const { useSignupMutation, useLoginMutation, useGetAllUsersQuery } = authApi;
