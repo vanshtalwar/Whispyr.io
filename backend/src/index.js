@@ -10,10 +10,8 @@ import cors from "cors";
 const app = express()
 app.use(
   cors({
-    origin: "https://whispyr-io.vercel.app/", // your frontend URL
-    credentials: true, // allow cookies/auth headers
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"], // ✅ this line fixes your current error
+    origin: ["https://whispyr-io.vercel.app"],
+    credentials: true,
   })
 );
 app.use(express.json())
