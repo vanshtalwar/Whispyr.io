@@ -17,7 +17,6 @@ app.use(
   })
 );
 
-app.options("*", cors()); // ✅ fix preflight
 
 app.use(express.json())
 app.use(cookieParser())
